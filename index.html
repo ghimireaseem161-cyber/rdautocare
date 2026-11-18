@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="RD AutoCare — vehicle servicing, maintenance, self-drive and driver-provided vehicle rental in Kathmandu, Nepal.">
+<title>R D AutoCare | Care That Keeps You Moving</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#101820;--muted:#66717b;--orange:#f36b32;--orange2:#ff8957;--paper:#f6f7f8;--white:#fff;--line:#e5e8eb;--navy:#111e2b;--radius:18px;--shadow:0 18px 55px rgba(16,24,32,.10)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"DM Sans",sans-serif;color:var(--ink);background:#fff;line-height:1.6}h1,h2,h3,h4{font-family:Manrope,sans-serif;line-height:1.15;margin:0 0 14px}p{margin:0 0 16px;color:var(--muted)}a{color:inherit;text-decoration:none}img{display:block;width:100%;object-fit:cover}.container{width:min(1160px,92%);margin:auto}.eyebrow{color:var(--orange);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:.75rem}.section{padding:88px 0}.section-head{max-width:650px;margin-bottom:38px}.section-head h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-1.5px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 21px;border-radius:10px;border:1px solid transparent;font-weight:800;cursor:pointer;transition:.2s;font:inherit;font-weight:800}.btn-primary{background:var(--orange);color:white}.btn-primary:hover{background:#d9531e;transform:translateY(-2px)}.btn-dark{background:var(--navy);color:white}.btn-outline{border-color:#cbd1d6;color:var(--ink);background:white}.btn-outline:hover{border-color:var(--orange);color:var(--orange)}.topbar{background:var(--navy);color:#dce3e9;font-size:.84rem;padding:9px 0}.topbar .container{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.topbar a{color:white}.navbar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav-inner{height:78px;display:flex;align-items:center;justify-content:space-between;gap:25px}.brand{display:flex;align-items:center;gap:11px;font-family:Manrope;font-weight:900;letter-spacing:-.6px;font-size:1.1rem}.brand-mark{height:42px;width:120px;border-radius:12px;object-fit: contain;flex-shrink:0;}.brand small{display:block;font:600 .62rem "DM Sans";letter-spacing:2px;color:var(--muted)}.nav-links{display:flex;align-items:center;gap:26px;font-size:.9rem;font-weight:700}.nav-links a:hover{color:var(--orange)}.menu-btn{display:none;background:none;border:0;font-size:1.6rem}.hero{background:var(--navy);color:white;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:520px;height:520px;border:1px solid rgba(255,255,255,.10);border-radius:50%;right:-120px;top:-190px;box-shadow:0 0 0 55px rgba(255,255,255,.025),0 0 0 110px rgba(255,255,255,.02)}.hero-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:45px;min-height:590px;padding:65px 0;position:relative;z-index:1}.hero h1{font-size:clamp(2.7rem,5.7vw,5rem);letter-spacing:-3px;margin:16px 0}.hero h1 span{color:var(--orange2)}.hero p{color:#c3ccd4;font-size:1.08rem;max-width:530px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.hero-photo{height:420px;border-radius:25px;overflow:hidden;position:relative;border:1px solid rgba(255,255,255,.15);box-shadow:0 25px 70px rgba(0,0,0,.3)}.hero-photo img{height:100%}.photo-note{position:absolute;left:18px;bottom:18px;background:white;color:var(--ink);padding:13px 16px;border-radius:12px;font-weight:800;font-size:.88rem}.trust-strip{background:#fff;border-bottom:1px solid var(--line)}.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:23px 0}.trust-item{display:flex;align-items:center;gap:12px;font-weight:800}.trust-icon{height:40px;width:40px;border-radius:12px;background:#fff0e9;color:var(--orange);display:grid;place-items:center;font-size:1.15rem}.about-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:65px;align-items:center}.about-photo{height:430px;border-radius:var(--radius);overflow:hidden;position:relative}.about-photo img{height:100%}.about-card{position:absolute;bottom:18px;right:18px;background:var(--orange);color:white;padding:18px 20px;border-radius:14px;font-weight:800}.about-copy h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-1.4px}.checks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0}.checks span{font-weight:700;font-size:.92rem}.checks span:before{content:"✓";color:var(--orange);font-weight:900;margin-right:9px}.services{background:var(--paper)}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service-card{background:white;border:1px solid var(--line);border-radius:16px;padding:25px;transition:.2s}.service-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:#ffd0bd}.service-icon{width:48px;height:48px;background:#fff0e9;color:var(--orange);border-radius:14px;display:grid;place-items:center;font-size:1.4rem;margin-bottom:20px}.service-card h3{font-size:1.12rem}.service-card p{font-size:.92rem;margin:0}.gallery-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;grid-template-rows:210px 210px;gap:14px}.gallery-item{border-radius:15px;overflow:hidden;position:relative;background:#dce1e5}.gallery-item:first-child{grid-row:span 2}.gallery-item img{height:100%;transition:.4s}.gallery-item:hover img{transform:scale(1.05)}.gallery-label{position:absolute;left:13px;bottom:13px;background:rgba(16,24,32,.82);color:white;padding:7px 11px;border-radius:8px;font-size:.8rem;font-weight:700}.rental{background:var(--navy);color:white;overflow:hidden}.rental-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.rental h2{font-size:clamp(2rem,4vw,3.2rem);letter-spacing:-1.5px}.rental p{color:#c3ccd4}.rental-photo{height:390px;border-radius:20px;overflow:hidden}.rental-photo img{height:100%}.rental-points{display:grid;gap:12px;margin:25px 0}.rental-points span:before{content:"✓";color:var(--orange2);font-weight:900;margin-right:10px}.booking{background:var(--paper)}.booking-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:45px;align-items:start}.booking-aside{background:var(--navy);color:white;padding:30px;border-radius:18px;position:sticky;top:110px}.booking-aside p{color:#c3ccd4}.booking-aside .big-number{font-size:1.25rem;font-weight:900;color:white;display:block;margin:20px 0}.booking-form{background:white;border:1px solid var(--line);border-radius:18px;padding:30px;box-shadow:var(--shadow)}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:17px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-weight:800;font-size:.87rem}.field input,.field select,.field textarea{width:100%;padding:13px 14px;border:1px solid #d9dfe4;border-radius:9px;font:inherit;background:#fff;color:var(--ink);outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--orange);box-shadow:0 0 0 3px rgba(243,107,50,.12)}.field textarea{min-height:105px;resize:vertical}.form-note{font-size:.8rem;margin:12px 0 18px}.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.contact-card{border:1px solid var(--line);border-radius:15px;padding:23px}.contact-card strong{display:block;margin:12px 0 4px}.contact-card p{font-size:.9rem;margin:0}.faq{background:var(--paper)}.faq-list{max-width:820px}.faq details{background:white;border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:10px 0}.faq summary{font-weight:800;cursor:pointer}.faq details p{margin:12px 0 0}.cta-band{background:var(--orange);color:white;padding:42px 0}.cta-inner{display:flex;justify-content:space-between;align-items:center;gap:25px}.cta-band h2{font-size:clamp(1.6rem,3vw,2.4rem);margin:0}.cta-band p{color:#fff0e9;margin:6px 0 0}.cta-band .btn{background:white;color:var(--ink);white-space:nowrap}.footer{background:#0b141d;color:#d7dfe6;padding:55px 0 20px}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:35px}.footer p{color:#aab5bf}.footer h3{font-size:1rem;color:white}.footer-links{display:grid;gap:9px;font-size:.9rem}.footer-links a:hover{color:var(--orange2)}.copyright{border-top:1px solid #273541;padding-top:18px;font-size:.8rem;color:#94a0aa;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.whatsapp-float{position:fixed;right:20px;bottom:20px;z-index:60;background:#1eae5a;color:white;border-radius:50px;padding:14px 18px;font-weight:900;box-shadow:0 10px 30px rgba(0,0,0,.2)}.whatsapp-float:hover{transform:translateY(-3px)}.admin-note{background:#fff8e9;border:1px solid #f2d49a;padding:18px;border-radius:12px;color:#6d4b0b;font-size:.9rem}.admin-note strong{display:block;margin-bottom:5px}
+@media(max-width:850px){.nav-links{display:none;position:absolute;top:78px;left:0;right:0;background:white;padding:20px 4%;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.nav-links.open{display:flex}.menu-btn{display:block}.nav-cta{display:none}.hero-grid,.about-grid,.rental-grid,.booking-grid{grid-template-columns:1fr}.hero-grid{padding:55px 0}.hero-photo{height:330px}.about-grid{gap:30px}.about-photo{height:330px}.service-grid{grid-template-columns:repeat(2,1fr)}.booking-aside{position:static}.gallery-grid{grid-template-rows:170px 170px}.contact-grid{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr 1fr}.trust-grid{grid-template-columns:1fr 1fr}.trust-item:last-child{grid-column:1/-1}}
+@media(max-width:560px){.section{padding:65px 0}.topbar .container{justify-content:center}.hero h1{letter-spacing:-2px}.hero-photo{height:260px}.trust-grid{grid-template-columns:1fr}.trust-item:last-child{grid-column:auto}.service-grid{grid-template-columns:1fr}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:160px 160px 160px}.gallery-item:first-child{grid-row:auto;grid-column:span 2}.contact-grid{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.booking-form{padding:20px}.cta-inner{align-items:flex-start;flex-direction:column}.footer-grid{grid-template-columns:1fr}.checks{grid-template-columns:1fr 1fr}.whatsapp-float{right:12px;bottom:12px;padding:12px 15px;font-size:.88rem}}
+
+/* Enhanced motion, reviews, map and contact presentation */
+:root{--glow:rgba(243,107,50,.22)}
+body{overflow-x:hidden}
+.hero{background:radial-gradient(circle at 78% 35%,rgba(243,107,50,.18),transparent 30%),linear-gradient(120deg,#0c1722,#172838 65%,#101b27)}
+.hero-photo:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 48%,rgba(5,12,19,.42));z-index:1;pointer-events:none}
+.hero-photo{animation:heroFloat 7s ease-in-out infinite}
+.photo-note{z-index:2;box-shadow:0 12px 35px rgba(0,0,0,.18)}
+.brand-mark{box-shadow:0 8px 22px var(--glow)}
+.service-card,.contact-card,.review-card,.gallery-item,.booking-form,.booking-aside{transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease}
+.service-card:hover,.contact-card:hover,.review-card:hover{transform:translateY(-7px);box-shadow:0 20px 45px rgba(16,24,32,.11)}
+.section-head{position:relative}
+.section-head:after{content:"";display:block;width:58px;height:4px;background:var(--orange);border-radius:8px;margin-top:19px}
+.reviews{background:linear-gradient(135deg,#fff 0%,#f5f7f9 100%)}
+.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.review-card{background:#fff;border:1px solid var(--line);border-radius:17px;padding:25px;box-shadow:0 8px 28px rgba(16,24,32,.045)}
+.review-stars{color:#f4a623;letter-spacing:3px;font-size:1.05rem;margin-bottom:14px}
+.review-card blockquote{margin:0 0 18px;color:#39434c;font-size:.96rem;line-height:1.75}
+.review-person{display:flex;align-items:center;gap:12px;border-top:1px solid var(--line);padding-top:15px}
+.review-avatar{height:42px;width:42px;border-radius:50%;background:#fff0e9;color:var(--orange); color: #FFFFFF; display:grid;place-items:center;font-weight:900}
+.green-avatar {
+    background: #14532D;
+}
+
+.brown-avatar {
+    background: #8B5E3C;
+}
+
+.pink-avatar {
+    background: #E879A9;
+}
+.review-person strong{display:block;font-size:.9rem}
+.review-person small{color:var(--muted)}
+.review-disclaimer{background:#fff8e9;border:1px solid #f2d49a;color:#72510c;border-radius:11px;padding:13px 15px;font-size:.84rem;margin-top:20px}
+.contact-section{background:#f5f7f8}
+.contact-layout{display:grid;grid-template-columns:.82fr 1.18fr;gap:22px;align-items:stretch}
+.contact-info{background:var(--navy);color:white;padding:30px;border-radius:18px}
+.contact-info h3{font-size:1.5rem}
+.contact-info p{color:#c3ccd4}
+.contact-detail{display:flex;gap:13px;align-items:flex-start;padding:17px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.contact-detail:last-child{border-bottom:0}
+.contact-detail .service-icon{flex:none;margin:0;background:rgba(243,107,50,.16);color:#ff9a70}
+.contact-detail strong{display:block;color:white}
+.contact-detail span,.contact-detail a{color:#c3ccd4;font-size:.9rem}
+.map-panel{border-radius:18px;overflow:hidden;min-height:420px;background:#e5e9ec;border:1px solid var(--line);box-shadow:var(--shadow)}
+.map-panel iframe{width:100%;height:100%;min-height:420px;border:0;display:block}
+.map-caption{padding:12px 16px;background:white;font-size:.84rem;color:var(--muted)}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .75s ease,transform .75s cubic-bezier(.2,.7,.2,1)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-left{opacity:0;transform:translateX(-28px);transition:opacity .8s ease,transform .8s ease}
+.reveal-left.visible{opacity:1;transform:translateX(0)}
+.reveal-right{opacity:0;transform:translateX(28px);transition:opacity .8s ease,transform .8s ease}
+.reveal-right.visible{opacity:1;transform:translateX(0)}
+@keyframes heroFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@keyframes softPulse{0%,100%{box-shadow:0 0 0 0 rgba(243,107,50,.3)}50%{box-shadow:0 0 0 10px rgba(243,107,50,0)}}
+.whatsapp-float{animation:softPulse 2.8s infinite}
+@media(prefers-reduced-motion:reduce){,::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal,.reveal-left,.reveal-right{opacity:1;transform:none}}
+@media(max-width:850px){.review-grid{grid-template-columns:1fr 1fr}.contact-layout{grid-template-columns:1fr}.map-panel,.map-panel iframe{min-height:350px}}
+@media(max-width:560px){.review-grid{grid-template-columns:1fr}.contact-info{padding:23px}.map-panel,.map-panel iframe{min-height:300px}}
+.brand-logo {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+</style>
+</head>
+<body>
+<div class="topbar"><div class="container"><span>📍 BhatkekoPul, Chabahil, Kathmandu</span><span>Call us: <a href="tel:+977 9851177254">+977 9851177254</a></span></div></div>
+<header class="navbar"><div class="container nav-inner">
+<a class="brand" href="#home"><img src="rdautocare.jpg" alt="RD Autocare Logo" class="brand-mark"><span>RD AUTOCARE<small>CARE THAT KEEPS YOU MOVING</small></span></a>
+<nav class="nav-links" id="navLinks"><a href="#about">About</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a><a href="#rental">Vehicle Rental</a><a href="#contact">Contact</a></nav>
+<a class="btn btn-primary nav-cta" href="#booking">Book a Service ↗️</a><button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="container hero-grid">
+<div><span class="eyebrow">Your vehicle. Our responsibility.</span><h1>Reliable care for <span>every journey.</span></h1><p>From routine maintenance and vehicle care to self-drive and driver-provided car rentals, RD AutoCare is here to keep your journey moving.</p><div class="hero-actions"><a class="btn btn-primary" href="#booking">Book an Appointment ↗️</a><a class="btn btn-outline" style="background:transparent;color:white;border-color:#65717c" href="#services">Explore Services</a></div></div>
+<div class="hero-photo"><img src="care1.jfif" alt="Professional vehicle workshop placeholder"><div class="photo-note">Professional vehicle care</div></div>
+</div></section>
+<div class="trust-strip"><div class="container trust-grid"><div class="trust-item"><span class="trust-icon">⚙️</span>Vehicle maintenance</div><div class="trust-item"><span class="trust-icon">🛠️</span>Service-focused support</div><div class="trust-item"><span class="trust-icon">🚘</span>Self-drive & Driver Rental Services</div></div></div>
+<section class="section" id="about"><div class="container about-grid"><div class="about-photo"><img src="repair.jpg" alt="Mechanic working on a vehicle placeholder"><div class="about-card">R D AutoCare<br><small>Chabahil, Kathmandu</small></div></div><div class="about-copy"><span class="eyebrow">About R D AutoCare</span><h2>Taking care of your vehicle, mile after mile.</h2><p>R D AutoCare is a vehicle-care business based around Chabahil, Kathmandu. We aim to make vehicle servicing and customer support straightforward, convenient and dependable.</p><p>Whether your vehicle needs attention or you're looking for a self-drive car or a car with a driver, contact our team and tell us what you need.</p><div class="checks"><span>Customer-focused service</span><span>Convenient enquiries</span><span>Service appointment requests</span><span>Rental enquiries </span></div><a class="btn btn-dark" href="#contact">Get in touch ↗️</a></div></div></section>
+<section class="section services" id="services"><div class="container"><div class="section-head"><span class="eyebrow">What we do</span><h2>Vehicle care and support</h2><p>Choose a service below, or use the appointment form to explain what your vehicle needs. Please confirm the final service availability with our team.</p></div><div class="service-grid">
+<div class="service-card"><div class="service-icon">⚙️</div><h3>General Servicing</h3><p>Routine vehicle maintenance and service enquiries.</p></div>
+<div class="service-card"><div class="service-icon">🔧</div><h3>Engine & Mechanical</h3><p>Enquiries about engine performance and mechanical concerns.</p></div>
+<div class="service-card"><div class="service-icon">🛑</div><h3>Brake & Suspension</h3><p>Inspection and maintenance enquiries for key vehicle systems.</p></div>
+<div class="service-card"><div class="service-icon">🔋</div><h3>Battery & Electrical</h3><p>Help with battery, starting and electrical-system concerns.</p></div>
+<div class="service-card"><div class="service-icon">❄️</div><h3>AC & Cooling</h3><p>Vehicle air-conditioning and cooling-system enquiries.</p></div>
+<div class="service-card"><div class="service-icon">✨</div><h3>Cleaning & Detailing</h3><p>Vehicle cleaning and appearance-care enquiries.</p></div>
+</div></div></section>
+<section class="section" id="gallery"><div class="container"><div class="section-head"><span class="eyebrow">Our work</span><h2>A look inside vehicle care</h2><p>These are some photos of our team, vehicle maintainence, vehicle service, detailing and the entire workspace of RD Autocare itself.</p></div><div class="gallery-grid">
+<div class="gallery-item"><img src="workshop.jpeg" alt="Workshop gallery placeholder"><span class="gallery-label">Workshop</span></div>
+<div class="gallery-item"><img src="care.jfif" alt="Vehicle inspection placeholder"><span class="gallery-label">Vehicle care</span></div>
+<div class="gallery-item"><img src="maintainance.jfif" alt="Car maintenance placeholder"><span class="gallery-label">Maintenance</span></div>
+<div class="gallery-item"><img src="detail.jfif" alt="Car detailing placeholder"><span class="gallery-label">Detailing</span></div>
+<div class="gallery-item"><img src="rental.jfif" alt="Automotive service placeholder"><span class="gallery-label">Vehicle Rental</span></div>
+</div></div></section>
+<section class="section rental" id="rental"><div class="container rental-grid"><div><span class="eyebrow">Vehicle rental</span><h2>Need a vehicle for your next journey? We've got you covered.</h2><p>Choose from our vehicle rental options for personal travel, family trips, airport transfers or other journeys. Whether you prefer to drive yourself or travel with a professional driver, we'll help you find the right option.</p><div class="rental-points"><span>Driver-provided and Self-drive vehicle service</span><span>Discuss your route and travel dates</span><span>Ask about vehicle availability and pricing</span></div><a class="btn btn-primary" href="#booking" onclick="document.getElementById('requestType').value='Vehicle rental with driver'">Enquire about rental ↗️</a></div><div class="rental-photo"><img src="rent.jpeg" alt="Vehicle rental placeholder"></div></div></section>
+<section class="section booking" id="booking"><div class="container"><div class="section-head"><span class="eyebrow">Appointment & enquiries</span><h2>Tell us what you need.</h2><p>Complete this form and send your request directly to R D AutoCare on WhatsApp. Our team can follow up to confirm availability, timing and price.</p></div><div class="booking-grid">
+<aside class="booking-aside"><span class="eyebrow">Quick contact</span><h3>Let's get your request started.</h3><p>Your form details will be prepared as a WhatsApp message. Nothing is submitted until you press the WhatsApp button and send it in WhatsApp.</p><span class="big-number">+977 9851177254</span><a class="btn btn-primary" href="https://wa.me/9779851177254?text=Hello%20R%20D%20AutoCare%2C%20I%20have%20an%20enquiry." target="_blank" rel="noopener">Chat on WhatsApp ↗️</a></aside>
+<form class="booking-form" id="bookingForm">
+<div class="form-grid">
+<div class="field"><label for="customerName">Your name *</label><input id="customerName" name="name" required placeholder="Enter your name"></div>
+<div class="field"><label for="customerPhone">Your phone number *</label><input id="customerPhone" name="phone" required type="tel" placeholder="98XXXXXXXX"></div>
+<div class="field"><label for="requestType">What do you need? *</label><select id="requestType" name="requestType" required><option value="">Choose an option</option><option>Vehicle servicing</option><option>Mechanical repair enquiry</option><option>Brake / suspension enquiry</option><option>Battery / electrical enquiry</option><option>AC / cooling enquiry</option><option>Cleaning / detailing</option><option>Vehicle rental with driver</option><option>Self Drive</option><option>General enquiry</option></select></div>
+<div class="field"><label for="preferredDate">Preferred date</label><input id="preferredDate" name="date" type="date"></div>
+<div class="field"><label for="vehicle">Vehicle make / model</label><input id="vehicle" name="vehicle" placeholder="e.g. Hyundai Creta"></div>
+<div class="field"><label for="vehicleNumber">Vehicle registration number</label><input id="vehicleNumber" name="vehicleNumber" placeholder="Optional"></div>
+<div class="field full"><label for="details">Describe your request *</label><textarea id="details" name="details" required placeholder="Tell us about the service needed, vehicle issue, rental route or any questions..."></textarea></div>
+<div class="field full"><button class="btn btn-primary" type="submit">Send Request on WhatsApp ↗️</button><p class="form-note">This opens WhatsApp with your details filled in. Review the message and press send in WhatsApp to complete your enquiry.</p></div>
+</div></form>
+</div></div></section>
+
+<section class="section reviews" id="reviews"><div class="container">
+<div class="section-head"><span class="eyebrow">Customer experiences</span><h2>Feedback that helps us improve.</h2><p>Customer feedback matters. This section is ready for genuine reviews from R D AutoCare customers.</p></div>
+<div class="review-grid">
+<article class="review-card"><div class="review-stars">★★★★★</div><blockquote>“Great service at RD Autocare ! Professional, reliable and quick work. My car feels smooth and well maintained. Highly recommended for quality car service in Kathmandu.”</blockquote><div class="review-person"><div class="review-avatar green-avatar">C</div><div><strong>Chiranji Giri</strong><small>Service review. </small></div></div></article>
+<article class="review-card"><div class="review-stars">★★★★★</div><blockquote>“I recently visited RD Auto Care for dent and paint services, and I'm very happy with the results. The team was professional, paid attention to detail, and completed the work on time. My car looks as good as new, and the pricing was fair. Highly recommend!”</blockquote><div class="review-person"><div class="review-avatar brown-avatar">B</div><div><strong>Battu Krishna Khatiwoda</strong><small>Customer feedback. </small></div></div></article>
+<article class="review-card"><div class="review-stars">★★★★★</div><blockquote>“Excellent service! The team was professional, honest, and efficient. They explained everything clearly and completed the work on time. My car runs perfectly now. Highly recommended for reliable and trustworthy maintenance.”</blockquote><div class="review-person"><div class="review-avatar pink-avatar">R</div><div><strong>RG</strong><small>Customer's Thought. </small></div></div></article>
+</div>
+
+</div></section>
+
+
+<section class="section contact-section" id="contact"><div class="container">
+<div class="section-head"><span class="eyebrow">Find and contact us</span><h2>Let's talk about your vehicle.</h2><p>Call, message or visit R D AutoCare in Chabahil. For appointments and rental enquiries, WhatsApp is the quickest way to reach us.</p></div>
+<div class="contact-layout">
+<div class="contact-info">
+<h3>R D AutoCare</h3><p>Vehicle care and self-drive or driver-provided rental enquiries in Kathmandu.</p>
+<div class="contact-detail"><div class="service-icon">☎️</div><div><strong>Phone & WhatsApp</strong><a href="tel:+9779851177254">+977 9851177254</a></div></div>
+<div class="contact-detail"><div class="service-icon">📍</div><div><strong>Workshop location</strong><span>Bhatkeko Pul, Chabahil, Kathmandu, Nepal</span></div></div>
+<div class="contact-detail"><div class="service-icon">🕒</div><div><strong>Business hours</strong><span>Please call to confirm today's opening hours.</span></div></div>
+<div class="contact-detail"><div class="service-icon">✉️</div><div><strong>Appointments & enquiries</strong><span>Send your request through the booking form or WhatsApp.</span></div></div>
+<a class="btn btn-primary" style="margin-top:22px"
+href="https://wa.me/9779851177254"
+target="_blank" rel="noopener">
+Message on WhatsApp ↗️
+</a>
+</div>
+<div>
+<div class="map-panel">
+  <iframe
+    title="Map showing RD Autocare, BhatkekoPul-Chabahil, Kathmandu"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d655.1576563144354!2d85.3412867673414!3d27.718484963781545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb190cfea56adb%3A0x740ef98a86e27a24!2sR%20D%20AUTOCARE!5e0!3m2!1sen!2snp!4v1793933829595!5m2!1sen!2snp"
+    width="600"
+    height="450"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="strict-origin-when-cross-origin">
+  </iframe>
+</div>
+
+<div class="map-caption">
+  RD Autocare, Bhatkekopul, Chabahil, Kathmandu. 
+</div>
+
+</div></div></section>
+
+<section class="section faq"><div class="container"><div class="section-head"><span class="eyebrow">Helpful information</span><h2>Frequently asked questions</h2></div><div class="faq-list">
+<details><summary>How do I book a service appointment?</summary><p>Fill out the appointment form on this page and select “Send Request on WhatsApp”. Review the message in WhatsApp and send it to our team. Your appointment is confirmed only after the team replies.</p></details>
+<details><summary>Can I enquire about a vehicle with a driver?</summary><p>Yes. Select “Vehicle rental with driver” in the form and include your travel date, route, number of passengers and other requirements.</p></details>
+<details><summary>Are rental vehicles available for self-drive?</summary><p>Yes, self-drive rentals are available. Select "Self-Drive" in the enquiry form to discuss vehicle options, availability and pricing with our team.</p></details>
+<details><summary>Are the service prices listed online?</summary><p>Please contact the team with your vehicle details and requested service for current pricing and availability.</p></details>
+</div></div></section>
+<section class="cta-band"><div class="container cta-inner"><div><h2>Need help with your vehicle?</h2><p>Send your enquiry to RD AutoCare today.</p></div><a class="btn" href="https://wa.me/9779851177254" target="_blank" rel="noopener">WhatsApp Us ↗️</a></div></section>
+</main>
+<footer class="footer"><div class="container"><div class="footer-grid">
+<div><a class="brand" href="#home" style="color:white"><img class="brand-logo" src="rdautocare.jpg" alt="RD AutoCare Logo"><span>RD AUTOCARE<small style="color:#aab5bf">CARE THAT KEEPS YOU MOVING</small></span></a><p style="margin-top:18px">Vehicle care and self-drive or driver-provided rental enquiries in Chabahil, Kathmandu.</p></div>
+<div><h3>Explore</h3><div class="footer-links"><a href="#about">About us</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#reviews">Customer reviews</a><a href="#rental">Vehicle rental</a></div></div>
+<div><h3>Get in touch</h3><div class="footer-links"><a href="tel:+9779851177254">+977 9851177254</a><a href="https://wa.me/9779851177254" target="_blank" rel="noopener">WhatsApp</a><a href="#booking">Book an appointment</a><span>Bhatkeko Pul, Chabahil, Kathmandu</span></div></div>
+</div><div class="copyright"><span>© <span id="year"></span> RD AutoCare. All rights reserved.</span><span></span></div></div></footer>
+<a class="whatsapp-float" href="https://wa.me/9779851177254?text=Hello%20R%20D%20AutoCare%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener">☏ WhatsApp</a>
+<script>
+
+// Smooth scroll-in animations for sections and cards.
+const revealTargets = document.querySelectorAll(
+  '.section-head, .about-photo, .about-copy, .service-card, .gallery-item, .rental-grid > *, .booking-aside, .booking-form, .review-card, .contact-info, .map-panel, .faq-list, .contact-card'
+);
+revealTargets.forEach((el, index) => {
+  el.classList.add(index % 3 === 1 ? 'reveal-right' : index % 3 === 2 ? 'reveal-left' : 'reveal');
+});
+if ('IntersectionObserver' in window) {
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -35px 0px' });
+  revealTargets.forEach(el => revealObserver.observe(el));
+} else {
+  revealTargets.forEach(el => el.classList.add('visible'));
+}
+
+const menuBtn=document.getElementById('menuBtn'),navLinks=document.getElementById('navLinks');
+menuBtn.addEventListener('click',()=>navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>navLinks.classList.remove('open')));
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('bookingForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const data=new FormData(this);
+ const fields=[
+  'Hello R D AutoCare, I would like to make an appointment / enquiry.',
+  '',
+  'Name: '+(data.get('name')||''),
+  'Phone: '+(data.get('phone')||''),
+  'Request: '+(data.get('requestType')||''),
+  'Preferred date: '+(data.get('date')||'Not specified'),
+  'Vehicle: '+(data.get('vehicle')||'Not specified'),
+  'Registration number: '+(data.get('vehicleNumber')||'Not specified'),
+  'Details: '+(data.get('details')||'')
+ ];
+ const url='https://wa.me/9779851177254?text='+encodeURIComponent(fields.join('\n'));
+ window.open(url,'_blank','noopener,noreferrer');
+});
+</script>
+</body>
+</html>
